@@ -1,3 +1,6 @@
+Dado("Acessar tela de autenticação") do
+  pending # Write code here that turns the phrase above into concrete actions
+end
 Dado("que informo um email válido") do
   pending # Write code here that turns the phrase above into concrete actions
 end

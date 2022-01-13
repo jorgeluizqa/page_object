@@ -4,6 +4,9 @@ require "rspec"
 require "faker"
 require "selenium-webdriver"
 require "webdrivers"
+require_relative "page_helper.rb"
+
+World(PageObjects)
 
 Capybara.configure do |config|
   config.default_driver = :selenium
