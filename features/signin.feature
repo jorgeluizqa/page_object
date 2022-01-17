@@ -2,6 +2,8 @@
 
 Funcionalidade: signin
 
-
+@signin
 Cenário: signin
-Dado que clico em signin
+Dado que acesso a pagina inicial
+Quando clico em signin
+Então sou direcionado a tela de login
