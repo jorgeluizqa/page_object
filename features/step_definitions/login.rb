@@ -1,7 +1,6 @@
 Dado("Clicar em signin") do
   visit "/"
   signin.clicar
-  sleep 10
 end
 
 Dado("que estou na pagina de login") do
@@ -9,13 +8,15 @@ Dado("que estou na pagina de login") do
 end
 
 Quando("preencho os campos com email e senha") do
-  pending # Write code here that turns the phrase above into concrete actions
+  login.email
+  login.senha
 end
 
-Quando("clico no botão") do
-  pending # Write code here that turns the phrase above into concrete actions
+E("clico no botão") do
+  login.clicar
+  sleep 10
 end
 
 Então("sou direcionado ao catálogo do produtos") do
-  pending # Write code here that turns the phrase above into concrete actions
+  login.nome
 end
